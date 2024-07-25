@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome Sir! Let's begin the Game Rock, Paper and Scissors</h1>
+    </header>
+    <main>
+        <h2>Make your choice Sir!</h2>
+        <div id="ChoiceContainer">
+            <div class="card" id="rock" onclick="playGame('Rock')">
+                <img src="images/rock.png">
+                <figcaption class="figCaption">Rock</figcaption>
+            </div>
+            <div class="card" id="paper" onclick="playGame('Paper')">
+                <img src="images/paper.png">
+                <figcaption class="figCaption">Paper</figcaption>
+            </div> 
+            <div class="card" id="scissor" onclick="playGame('Scissor')">
+                <img src="images/scissors.png">
+                <figcaption class="figCaption">Scissor</figcaption>
+            </div>
+            
+
+        </div>
+        <div id="bottom">
+            <div id="choiceDisplay">
+                <div id="playerDisplay" class="res">Player: </div>
+                <div id="computerDisplay" class="res">Computer: </div>
+                <div id="resultDisplay" class="res">IT'S A TIE!</div>
+            </div>
+            <div id="scoreDisplay">
+                <div class="scoreDisplay">Player Score :
+                    <span id="playerScoreDisplay">0</span>
+                </div>
+                <div class="scoreDisplay">Computer Score :
+                    <span id="computerScoreDisplay">0</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
